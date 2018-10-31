@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Node.js API | Vue Styleguidist</title>
+    <meta name="description" content="Isolated Vue component development environment with a living style guide">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.bbaae787.css" as="style"><link rel="preload" href="/assets/js/app.1ae7be8f.js" as="script"><link rel="preload" href="/assets/js/4.f6d1e70d.js" as="script"><link rel="prefetch" href="/assets/js/6.122d0c91.js"><link rel="prefetch" href="/assets/js/2.204b62a9.js"><link rel="prefetch" href="/assets/js/3.9d08840a.js"><link rel="prefetch" href="/assets/js/5.78a58e59.js"><link rel="prefetch" href="/assets/js/7.e9c6aa48.js"><link rel="prefetch" href="/assets/js/8.3076c1d9.js"><link rel="prefetch" href="/assets/js/9.b5285bb4.js"><link rel="prefetch" href="/assets/js/10.9e2f536a.js"><link rel="prefetch" href="/assets/js/11.97f29c7b.js"><link rel="prefetch" href="/assets/js/12.4bb85e1c.js"><link rel="prefetch" href="/assets/js/13.05d6434b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bbaae787.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vue Styleguidist</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/GettingStarted.html" class="sidebar-link">Getting Started with Vue Styleguidist</a></li><li><a href="/Documenting.html" class="sidebar-link">Documenting components</a></li><li><a href="/Components.html" class="sidebar-link">Locating Components</a></li><li><a href="/Webpack.html" class="sidebar-link">Configuring webpack</a></li><li><a href="/Cookbook.html" class="sidebar-link">Cookbook</a></li><li><a href="/API.html" class="active sidebar-link">Node.js API</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/API.html#initialization" class="sidebar-link">Initialization</a></li><li class="sidebar-sub-header"><a href="/API.html#methods" class="sidebar-link">Methods</a></li></ul></li><li><a href="/Configuration.html" class="sidebar-link">Configuration</a></li><li><a href="/CLI.html" class="sidebar-link">CLI commands and options</a></li><li><a href="/Development.html" class="sidebar-link">Developer guide</a></li></ul> </div> <div class="page"> <div class="content"><h1 id="node-js-api"><a href="#node-js-api" aria-hidden="true" class="header-anchor">#</a> Node.js API</h1> <ul><li><a href="#initialization">Initialization</a></li> <li><a href="#methods">Methods</a></li></ul> <h2 id="initialization"><a href="#initialization" aria-hidden="true" class="header-anchor">#</a> Initialization</h2> <p>First, you need to initialize the API for your style guide config.</p> <p>Using a JavaScript object:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> styleguidist <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-styleguidist'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> styleguide <span class="token operator">=</span> <span class="token function">styleguidist</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  logger<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    warn<span class="token punctuation">:</span> console<span class="token punctuation">.</span>warn<span class="token punctuation">,</span>
+    info<span class="token punctuation">:</span> console<span class="token punctuation">.</span>log<span class="token punctuation">,</span>
+    debug<span class="token punctuation">:</span> console<span class="token punctuation">.</span>log
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  components<span class="token punctuation">:</span> <span class="token string">'./lib/components/**/*.vue'</span><span class="token punctuation">,</span>
+  webpackConfig<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    module<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      rules<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.vue$/</span><span class="token punctuation">,</span>
+          exclude<span class="token punctuation">:</span> <span class="token regex">/node_modules/</span><span class="token punctuation">,</span>
+          loader<span class="token punctuation">:</span> <span class="token string">'vue-loader'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.js?$/</span><span class="token punctuation">,</span>
+          exclude<span class="token punctuation">:</span> <span class="token regex">/node_modules/</span><span class="token punctuation">,</span>
+          loader<span class="token punctuation">:</span> <span class="token string">'babel-loader'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          test<span class="token punctuation">:</span> <span class="token regex">/\.css$/</span><span class="token punctuation">,</span>
+          loader<span class="token punctuation">:</span> <span class="token string">'style-loader!css-loader?modules'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p><strong>Note:</strong> any output is disabled by default, you may need to define your own <a href="/Configuration.html#logger">logger</a>.</p> <p>Using a config file:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> styleguidist <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-styleguidist'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> styleguide <span class="token operator">=</span> <span class="token function">styleguidist</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../styleguide.config.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre></div><p>Or auto searching a config file:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> styleguidist <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-styleguidist'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> styleguide <span class="token operator">=</span> <span class="token function">styleguidist</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre></div><p>See all available <a href="/Configuration.html">config options</a>.</p> <h2 id="methods"><a href="#methods" aria-hidden="true" class="header-anchor">#</a> Methods</h2> <h3 id="build-callback"><a href="#build-callback" aria-hidden="true" class="header-anchor">#</a> <code>build(callback)</code></h3> <h4 id="arguments"><a href="#arguments" aria-hidden="true" class="header-anchor">#</a> Arguments</h4> <ol><li><p><code>callback(err, config, stats)</code> (<em>Function</em>): A callback to be invoked when style guide is built:</p> <ol><li><code>err</code> (<em>Object</em>): error details.</li> <li><code>config</code> (<em>Object</em>): normalized style guide config.</li> <li><code>stats</code> (<em>Object</em>): webpack build stats.</li></ol></li></ol> <h4 id="returns"><a href="#returns" aria-hidden="true" class="header-anchor">#</a> Returns</h4> <p>(<em>Compiler</em>): webpack <code>Compiler</code> instance.</p> <h4 id="example"><a href="#example" aria-hidden="true" class="header-anchor">#</a> Example</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> styleguidist <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-styleguidist'</span><span class="token punctuation">)</span>
+<span class="token function">styleguidist</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../styleguide.config.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span>err<span class="token punctuation">,</span> config<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Style guide published to'</span><span class="token punctuation">,</span> config<span class="token punctuation">.</span>styleguideDir<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h3 id="server-callback"><a href="#server-callback" aria-hidden="true" class="header-anchor">#</a> <code>server(callback)</code></h3> <h4 id="arguments-2"><a href="#arguments-2" aria-hidden="true" class="header-anchor">#</a> Arguments</h4> <ol><li><p><code>callback(err, config)</code> (<em>Function</em>): A callback to be invoked when style guide is built:</p> <ol><li><code>err</code> (<em>Object</em>): error details.</li> <li><code>config</code> (<em>Object</em>): normalized style guide config.</li></ol></li></ol> <h4 id="returns-2"><a href="#returns-2" aria-hidden="true" class="header-anchor">#</a> Returns</h4> <p>(<em>Object</em>): Object containing a webpack <code>Compiler</code> instance and the vue-styleguidist <code>Server</code></p> <h4 id="example-2"><a href="#example-2" aria-hidden="true" class="header-anchor">#</a> Example</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> styleguidist <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-styleguidist'</span><span class="token punctuation">)</span>
+<span class="token function">styleguidist</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../styleguide.config.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">server</span><span class="token punctuation">(</span>
+  <span class="token punctuation">(</span>err<span class="token punctuation">,</span> config<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token template-string"><span class="token string">`http://</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>config<span class="token punctuation">.</span>serverHost<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>config<span class="token punctuation">.</span>serverPort<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`Listening at </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>url<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">`</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span>
+</code></pre></div><h3 id="makewebpackconfig-env"><a href="#makewebpackconfig-env" aria-hidden="true" class="header-anchor">#</a> <code>makeWebpackConfig([env])</code></h3> <h4 id="arguments-3"><a href="#arguments-3" aria-hidden="true" class="header-anchor">#</a> Arguments</h4> <ol><li>[<code>env</code>=<code>'production'</code>] (<em>String</em>): <code>production</code> or <code>development</code>.</li></ol> <h4 id="returns-3"><a href="#returns-3" aria-hidden="true" class="header-anchor">#</a> Returns</h4> <p>(<em>Object</em>): webpack config.</p> <h4 id="example-3"><a href="#example-3" aria-hidden="true" class="header-anchor">#</a> Example</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// webpack.config.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// User webpack config</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'vue-styleguidist'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">makeWebpackConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">]</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Cookbook.html" class="prev">
+          Cookbook
+        </a></span> <span class="next"><a href="/Configuration.html">
+          Configuration
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/4.f6d1e70d.js" defer></script><script src="/assets/js/app.1ae7be8f.js" defer></script>
+  </body>
+</html>
