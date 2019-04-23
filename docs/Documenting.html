@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Documenting components | Vue Styleguidist</title>
+    <meta name="description" content="Isolated Vue component development environment with a living style guide">
+    <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Vue Styleguidist docs">
+  <meta prefix="og: http://ogp.me/ns#" property="twitter:title" content="Vue Styleguidist docs">
+  <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website">
+  <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Isolated Vue component development environment with a living style guide">
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://raw.githubusercontent.com/vue-styleguidist/vue-styleguidist/master/assets/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.21bbaee9.css" as="style"><link rel="preload" href="/assets/js/app.8f59db69.js" as="script"><link rel="preload" href="/assets/js/3.49128bbd.js" as="script"><link rel="preload" href="/assets/js/18.0972fe05.js" as="script"><link rel="prefetch" href="/assets/js/10.161a88c5.js"><link rel="prefetch" href="/assets/js/11.0c21fff1.js"><link rel="prefetch" href="/assets/js/12.bf4bb429.js"><link rel="prefetch" href="/assets/js/13.3730541c.js"><link rel="prefetch" href="/assets/js/14.1cf81202.js"><link rel="prefetch" href="/assets/js/15.c4eaf700.js"><link rel="prefetch" href="/assets/js/16.b067477e.js"><link rel="prefetch" href="/assets/js/17.e86ef9a2.js"><link rel="prefetch" href="/assets/js/19.d51ec422.js"><link rel="prefetch" href="/assets/js/20.74fd2b12.js"><link rel="prefetch" href="/assets/js/21.8fca0e78.js"><link rel="prefetch" href="/assets/js/4.6efc128b.js"><link rel="prefetch" href="/assets/js/5.ecf469f3.js"><link rel="prefetch" href="/assets/js/6.c6c9d012.js"><link rel="prefetch" href="/assets/js/7.ecc2548f.js"><link rel="prefetch" href="/assets/js/8.0d6c72c2.js"><link rel="prefetch" href="/assets/js/9.eb084e3f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.bb278ddb.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.21bbaee9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Vue Styleguidist</span></a> <div class="links"><form id="search-form" role="search" class="algolia-search-wrapper search-box"><input id="algolia-search-input" class="search-query"></form> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/GettingStarted.html" class="nav-link">Docs</a></div><div class="nav-item"><a href="/Examples.html" class="nav-link">Examples</a></div><div class="nav-item"><a href="/VueCLI3doc.html" class="nav-link">Vue CLI Plugin</a></div><div class="nav-item"><a href="/Configuration.html" class="nav-link">Reference</a></div> <a href="https://github.com/vue-styleguidist/vue-styleguidist" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/GettingStarted.html" class="nav-link">Docs</a></div><div class="nav-item"><a href="/Examples.html" class="nav-link">Examples</a></div><div class="nav-item"><a href="/VueCLI3doc.html" class="nav-link">Vue CLI Plugin</a></div><div class="nav-item"><a href="/Configuration.html" class="nav-link">Reference</a></div> <a href="https://github.com/vue-styleguidist/vue-styleguidist" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/docs/GettingStarted.html" class="sidebar-link">Getting Started</a></li><li><a href="/docs/Documenting.html" class="active sidebar-link">Documenting components</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/Documenting.html#code-comments" class="sidebar-link">Code comments</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#events" class="sidebar-link">Events</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#slots" class="sidebar-link">Slots</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#include-mixins-and-extends" class="sidebar-link">Include Mixins and Extends</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#usage-examples-and-readme-files" class="sidebar-link">Usage examples and Readme files</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#external-examples-using-doclet-tags" class="sidebar-link">External examples using doclet tags</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#public-methods" class="sidebar-link">Public methods</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#ignoring-props" class="sidebar-link">Ignoring props</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#using-jsdoc-tags" class="sidebar-link">Using JSDoc tags</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#methods" class="sidebar-link">Methods</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#typescript-flow-and-class-style-components" class="sidebar-link">TypeScript, Flow and Class-style Components</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#jsx" class="sidebar-link">JSX</a></li><li class="sidebar-sub-header"><a href="/docs/Documenting.html#writing-code-examples" class="sidebar-link">Writing code examples</a></li></ul></li><li><a href="/docs/Components.html" class="sidebar-link">Locating Components</a></li><li><a href="/docs/Webpack.html" class="sidebar-link">Configuring webpack</a></li><li><a href="/docs/Cookbook.html" class="sidebar-link">Cookbook</a></li><li><a href="/docs/CLI.html" class="sidebar-link">CLI commands and options</a></li><li><a href="/docs/API.html" class="sidebar-link">Node.js API</a></li><li><a href="/docs/Deployment.html" class="sidebar-link">Deployment</a></li><li><a href="/docs/Docgen.html" class="sidebar-link">vue-docgen-api</a></li><li><a href="/docs/Development.html" class="sidebar-link">Developer guide</a></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="documenting-components"><a href="#documenting-components" aria-hidden="true" class="header-anchor">#</a> Documenting components</h1> <p>Vue styleguidist generates documentation for your components based on the comments in your source code declarations and Readme files.</p> <blockquote><p><strong>Note:</strong> <a href="/Examples.html">See examples</a> of documented components in our demo style guide.</p></blockquote> <ul><li><a href="#code-comments">Code comments</a></li> <li><a href="#events">Events</a></li> <li><a href="#slots">Slots</a></li> <li><a href="#include-mixins-and-extends">Include Mixins and Extends</a></li> <li><a href="#usage-examples-and-readme-files">Usage examples and Readme files</a></li> <li><a href="#external-examples-using-doclet-tags">External examples using doclet tags</a></li> <li><a href="#public-methods">Public methods</a></li> <li><a href="#ignoring-props">Ignoring props</a></li> <li><a href="#using-jsdoc-tags">Using JSDoc tags</a></li> <li><a href="#methods">Methods</a></li> <li><a href="#typescript-flow-and-class-style-components">TypeScript, Flow and Class-style Components</a></li> <li><a href="#jsx">JSX</a></li> <li><a href="#writing-code-examples">Writing code examples</a></li></ul> <h2 id="code-comments"><a href="#code-comments" aria-hidden="true" class="header-anchor">#</a> Code comments</h2> <p>Vue styleguidist will display the contents or your components’ JSDoc comment blocks.</p> <blockquote><p><strong>Note:</strong> Component’s and documentation comments are parsed by default by the <a href="/docs/Docgen.html">vue-docgen-api</a> library.</p></blockquote> <blockquote><p><strong>Note:</strong> You can change this behavior using <a href="/Configuration.html#propsparser">propsParser</a> options.</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Button<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    /* ... */
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token comment">/**
+   * The only true button.
+   * @displayName Best Button
+   */</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'Button'</span><span class="token punctuation">,</span>
+    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * The color for the button.
+       */</span>
+      color<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'#333'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">/**
+       * The size of the button
+       * `small, normal, large`
+       */</span>
+      size<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'normal'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">/**
+       * Gets called when the user clicks on the button
+       */</span>
+      onClick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> Function<span class="token punctuation">,</span>
+        <span class="token function-variable function">default</span><span class="token punctuation">:</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'You have clicked me!'</span><span class="token punctuation">,</span> event<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/* ... */</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>Notice the use of the @displayName tag to change the displayed name of your component</p> <p>If you want create a custom <a href="https://vuejs.org/v2/guide/components.html#Customizing-Component-v-model" target="_blank" rel="noopener noreferrer">v-model<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, you have to add <code>model</code> tag in comment</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'my-checkbox'</span><span class="token punctuation">,</span>
+    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * @model
+       */</span>
+      value<span class="token punctuation">:</span> String
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="events"><a href="#events" aria-hidden="true" class="header-anchor">#</a> Events</h2> <p>For events documentation just add a comment right above it.</p> <p>If the event is explicitly specified, no need to tell styleguidist what it is.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Success event.
+ *
+ * @property {object}
+ */</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  demo<span class="token punctuation">:</span> <span class="token string">'example'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>Constants will be recognized too</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Success event.
+ *
+ * @property {object}
+ */</span>
+<span class="token keyword">const</span> success <span class="token operator">=</span> <span class="token string">'succ'</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span>success<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  demo<span class="token punctuation">:</span> <span class="token string">'example'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>If your event name comes from an object, precise the <code>@event</code> tag</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Success event.
+ *
+ * @event success
+ * @property {object}
+ */</span>
+<span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token constant">EVENTS</span><span class="token punctuation">.</span>success<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  demo<span class="token punctuation">:</span> <span class="token string">'example'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h2 id="slots"><a href="#slots" aria-hidden="true" class="header-anchor">#</a> Slots</h2> <p>Slots are automatically documented by styleguidist. To add descriptions, just add a comment just before.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-head<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- @slot Use this slot header --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>head<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>modal-body<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!-- @slot Use this slot body --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>body<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>slot</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="include-mixins-and-extends"><a href="#include-mixins-and-extends" aria-hidden="true" class="header-anchor">#</a> Include Mixins and Extends</h2> <p>If you import a <a href="https://vuejs.org/v2/guide/mixins.html" target="_blank" rel="noopener noreferrer">mixin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> or <a href="https://vuejs.org/v2/api/#extends" target="_blank" rel="noopener noreferrer">extends<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> it will automatically be added to your main component</p> <p>Include a Mixin:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// src/mixins/colorMixin.js</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The color for the button example
+     */</span>
+    color<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'#333'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Extends a component:</p> <div class="language-vue extra-class"><pre class="language-vue"><code>// src/extends/Base.vue
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span><span class="token punctuation">&gt;</span></span>{{ color }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!--the appropriate input should go here--&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The color for the button example
+     */</span>
+    colorExtends<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'#333'</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+<span class="token comment">// src/components/Button/Button.vue</span>
+
+<span class="token keyword">import</span> colorMixin <span class="token keyword">from</span> <span class="token string">'../../mixins/colorMixin'</span>
+<span class="token keyword">import</span> Base <span class="token keyword">from</span> <span class="token string">'../../extends/Base.vue'</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'Button'</span><span class="token punctuation">,</span>
+  mixins<span class="token punctuation">:</span> <span class="token punctuation">[</span>colorMixin<span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token keyword">extends</span><span class="token punctuation">:</span> Base<span class="token punctuation">,</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * The size of the button
+     * `small, normal, large`
+     */</span>
+    size<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'normal'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">/**
+     * Add custom click actions.
+     **/</span>
+    onCustomClick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token function-variable function">default</span><span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">null</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">/* ... */</span>
+<span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="usage-examples-and-readme-files"><a href="#usage-examples-and-readme-files" aria-hidden="true" class="header-anchor">#</a> Usage examples and Readme files</h2> <p>Vue styleguidist will look for any <code>Readme.md</code> or <code>ComponentName.md</code> files in the component’s folder and display them. Any code block with a language tag of <code>vue</code>, <code>js</code>, <code>jsx</code> or <code>javascript</code> will be rendered as a React component with an interactive playground.</p> <pre><code>Vue component example:
+
+```jsx
+    &lt;Button size=&quot;large&quot;&gt;Push Me&lt;/Button&gt;
+```
+
+One more with generic code fence:
+
+```
+&lt;Button size=&quot;large&quot;&gt;Push Me&lt;/Button&gt;
+```
+
+You can disable an editor by passing a `noeditor` modifier:
+
+```jsx noeditor
+&lt;Button&gt;Push Me&lt;/Button&gt;
+```
+
+To render an example as highlighted source code add a `static` modifier:
+
+```jsx static
+&lt;Button&gt;Push Me&lt;/Button&gt;
+```
+
+You can also initialize vue to construct more complex examples in two ways:
+
+1. Create a new Vue instance
+
+```js
+const names = require('dog-names').all;
+
+new Vue({
+  data(){
+    return {
+      list: names
+    }
+  },
+  template: `
+    &lt;div&gt;
+      &lt;RandomButton :variants=&quot;list&quot; /&gt;
+    &lt;/div&gt;
+  `
+})
+```
+
+2. Single-file components with a language tag of vue (supports &lt;style scoped&gt;)
+
+```vue
+  &lt;template&gt;
+    &lt;div class=&quot;wrapper&quot;&gt;
+      &lt;Button id=&quot;dog-name-button&quot; @click.native=&quot;pushButton&quot;&gt;Push Me&lt;/Button&gt;
+      &lt;hr /&gt;
+      &lt;p class=&quot;text-name&quot;&gt;Next Dog Name: &lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+
+  &lt;script&gt;
+    const dogNames = require('dog-names').all;
+
+    // You can also use 'exports.default = {}' style module exports.
+    export default {
+      data() {
+        return { numClicks: 0, dogName: dogNames[0] };
+      },
+      methods: {
+        pushButton() {
+          this.numClicks += 1;
+          this.dogName = dogNames[this.numClicks];
+        }
+      }
+    }
+  &lt;/script&gt;
+
+  &lt;style scoped&gt;
+    .wrapper {
+      background: blue;
+    }
+    .text-name {
+      color: red;
+    }
+  &lt;/style&gt;
+```
+
+Examples with all other languages are rendered only as highlighted source code, not an actual component:
+
+```html
+&lt;Button size=&quot;large&quot;&gt;Push Me&lt;/Button&gt;
+```
+
+Any [Markdown](http://daringfireball.net/projects/markdown/) is **allowed** _here_.
+</code></pre> <blockquote><p><strong>Note:</strong> You can configure examples file name with the <a href="/Configuration.html#getexamplefilename">getExampleFilename</a> option.</p></blockquote> <p>You can also add the <a href="https://vue-loader.vuejs.org/en/configurations/custom-blocks.html" target="_blank" rel="noopener noreferrer">custom block<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <code>&lt;docs&gt;&lt;/docs&gt;</code> inside <code>*.vue</code> files, so that vue styleguidist builds the readme. You can review the following <a href="https://github.com/vue-styleguidist/vue-styleguidist/blob/master/examples/basic/src/components/Button/Button.vue#L85" target="_blank" rel="noopener noreferrer">example<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="external-examples-using-doclet-tags"><a href="#external-examples-using-doclet-tags" aria-hidden="true" class="header-anchor">#</a> External examples using doclet tags</h2> <p>Additional example files can be associated with components using <code>@example</code> doclet syntax.</p> <p>The following component will also have an example loaded from the <code>extra.examples.md</code> file:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Component is described here.
+ *
+ * @example ./extra.examples.md
+ */</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'Button'</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p><strong>Note:</strong> You’ll need a regular example file (like <code>Readme.md</code>) too when <a href="/Configuration.html#skipcomponentswithoutexample">skipComponentsWithoutExample</a> is <code>true</code>.</p></blockquote> <h2 id="public-methods"><a href="#public-methods" aria-hidden="true" class="header-anchor">#</a> Public methods</h2> <p>By default, any methods your components have are considered to be private and are not published. Mark your public methods with JSDoc <a href="http://usejsdoc.org/tags-public.html" target="_blank" rel="noopener noreferrer"><code>@public</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> tag to get them published in the docs:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * Insert text at cursor position.
+ *
+ * @param {string} text
+ * @public
+ */</span>
+<span class="token function">insertAtCursor</span><span class="token punctuation">(</span><span class="token parameter">text</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// ...</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="ignoring-props"><a href="#ignoring-props" aria-hidden="true" class="header-anchor">#</a> Ignoring props</h2> <p>By default, all props your components have are considered to be public and are published. In some rare cases you might want to remove a prop from the documentation while keeping it in the code. To do so, mark the prop with JSDoc <a href="http://usejsdoc.org/tags-ignore.html" target="_blank" rel="noopener noreferrer"><code>@ignore</code><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> tag to remove it from the docs:</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+    * @ignore
+    */</span>
+    color<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+      <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'#333'</span>
+    <span class="token punctuation">}</span>
+</code></pre></div><h2 id="using-jsdoc-tags"><a href="#using-jsdoc-tags" aria-hidden="true" class="header-anchor">#</a> Using JSDoc tags</h2> <p>You can use the following <a href="http://usejsdoc.org/" target="_blank" rel="noopener noreferrer">JSDoc<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> tags when documenting components, props and methods:</p> <ul><li><a href="http://usejsdoc.org/tags-deprecated.html" target="_blank" rel="noopener noreferrer">@deprecated<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://usejsdoc.org/tags-see.html" target="_blank" rel="noopener noreferrer">@see, @link<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://usejsdoc.org/tags-author.html" target="_blank" rel="noopener noreferrer">@author<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://usejsdoc.org/tags-since.html" target="_blank" rel="noopener noreferrer">@since<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><a href="http://usejsdoc.org/tags-version.html" target="_blank" rel="noopener noreferrer">@version<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h3 id="displayname"><a href="#displayname" aria-hidden="true" class="header-anchor">#</a> displayName</h3> <p>In addition to those tags you can use <code>@displayName</code> to change the name displayed in you styleguide. Know that since it's visual name has changed, it's calling name is now The letters of it, without space or punctuation.</p> <p>For instance, if the display name is set as</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @displayName Wonderful Button
+ **/</span>
+</code></pre></div><p>To reference it in examples, one has to call <code>&lt;WonderfulButton/&gt;</code>.</p> <h2 id="methods"><a href="#methods" aria-hidden="true" class="header-anchor">#</a> Methods</h2> <p>When documenting methods you can also use:</p> <ul><li><a href="http://usejsdoc.org/tags-param.html" target="_blank" rel="noopener noreferrer">@param, @arg, @argument<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p>Documenting events:</p> <ul><li><a href="http://usejsdoc.org/tags-event.html" target="_blank" rel="noopener noreferrer">@event<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <p>Documenting v-model:</p> <ul><li>@model</li></ul> <p>Tags can even render Markdown.</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>
+  <span class="token comment">&lt;!-- --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+  <span class="token comment">/**
+   * The only true button.
+   * @version 1.0.1
+   */</span>
+  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">'Button'</span><span class="token punctuation">,</span>
+    props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * The color for the button.
+       * @see See [Wikipedia](https://en.wikipedia.org/wiki/Web_colors#HTML_color_names)
+       * @see See [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for a list of color names
+       */</span>
+      color<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'#333'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">/**
+       * The size of the button
+       * `small, normal, large`
+       * @since Version 1.0.1
+       */</span>
+      size<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> String<span class="token punctuation">,</span>
+        <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'normal'</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">/**
+       * Gets called when the user clicks on the button
+       */</span>
+      onClick<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> Function<span class="token punctuation">,</span>
+        <span class="token function-variable function">default</span><span class="token punctuation">:</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'You have clicked me!'</span><span class="token punctuation">,</span> event<span class="token punctuation">.</span>target<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token comment">/**
+       * Gets called when the user clicks on the button
+       *
+       * @param {SyntheticEvent} event The react `SyntheticEvent`
+       * @param {Number} num Numbers of examples
+       */</span>
+      <span class="token function">launch</span><span class="token punctuation">(</span><span class="token parameter">event<span class="token punctuation">,</span> num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">/* ... */</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token comment">// ...</span>
+      <span class="token function">ignoreMethod</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">/**
+         * Success event.
+         *
+         * @event success
+         * @type {object}
+         */</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">/* ... */</span>
+  <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="typescript-flow-and-class-style-components"><a href="#typescript-flow-and-class-style-components" aria-hidden="true" class="header-anchor">#</a> TypeScript, Flow and Class-style Components</h2> <p>Vue styleguidist understands TypeScript &amp; Flow annotations. Write components in a typed language, types are documented automatically. It is compatible with class style components as well, with or without TypeScript.</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Component<span class="token punctuation">,</span> Prop<span class="token punctuation">,</span> Vue <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-property-decorator'</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'ClassButton'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">extends</span> <span class="token class-name">Vue</span> <span class="token punctuation">{</span>
+  aHiddenData<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">''</span>
+
+  <span class="token comment">/**
+   * prop typed through the decorators arguments
+   */</span>
+  @<span class="token function">Prop</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token keyword">type</span><span class="token punctuation">:</span> String <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  propNoType <span class="token operator">=</span> <span class="token string">''</span>
+
+  <span class="token comment">/**
+   * prop typed through an annotation
+   */</span>
+  @<span class="token function">Prop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> propA<span class="token punctuation">:</span> <span class="token builtin">number</span> <span class="token operator">=</span> <span class="token number">0</span>
+
+  <span class="token comment">/**
+   * prop with a default value
+   */</span>
+  @<span class="token function">Prop</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token keyword">default</span><span class="token punctuation">:</span> <span class="token string">'default value'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  propB<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token operator">=</span> <span class="token string">'hello'</span>
+
+  <span class="token comment">/**
+   * prop with a hybrid type
+   */</span>
+  @<span class="token function">Prop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> propC<span class="token punctuation">:</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">boolean</span> <span class="token operator">=</span> <span class="token boolean">false</span>
+
+  <span class="token comment">/**
+   * method testing
+   * @public
+   */</span>
+  <span class="token function">onClick</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">:</span> <span class="token builtin">string</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Success event when we click
+     */</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$emit</span><span class="token punctuation">(</span><span class="token string">'success'</span><span class="token punctuation">,</span> a<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Notice how <code>onClick</code> parameter <code>a</code> does not need type documentation.</p> <h2 id="jsx"><a href="#jsx" aria-hidden="true" class="header-anchor">#</a> JSX</h2> <p>vue styleguidist understands JSX component templates too. In this example it will display the definition of the found slot.</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token comment">/** @slot Use this slot to have a header */</span><span class="token punctuation">}</span><span class="token plain-text">
+        </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>slot</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>header<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+        </span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>contentText<span class="token punctuation">}</span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="writing-code-examples"><a href="#writing-code-examples" aria-hidden="true" class="header-anchor">#</a> Writing code examples</h2> <p>Code examples in Markdown use the ES6 syntax. They can access all the components of your style guide using global variables:</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Panel</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    Using the Button component in the example of the Panel component:
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+  </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Button</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Push Me</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Button</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span><span class="token class-name">Panel</span></span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><blockquote><p><strong>Note:</strong> Vue styleguidist uses <a href="https://buble.surge.sh/guide/" target="_blank" rel="noopener noreferrer">Bublé<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> to run ES6 code on the frontend, it supports <a href="https://buble.surge.sh/guide/#unsupported-features" target="_blank" rel="noopener noreferrer">most of the ES6 features<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</p></blockquote> <p>You can also <code>import</code> other modules (e.g. mock data that you use in your unit tests) from examples in Markdown:</p> <div class="language-jsx extra-class"><pre class="language-jsx"><code><span class="token keyword">const</span> mockData <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./mocks'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span><span class="token class-name">Message</span></span> <span class="token attr-name">:content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>mockData.hello<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre></div><blockquote><p><strong>Note:</strong> If you need a more complex demo it’s often a good idea to define it in a separate JavaScript file and <code>import</code> it in Markdown</p></blockquote></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/vue-styleguidist/vue-styleguidist/edit/master/docs/docs/Documenting.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/docs/GettingStarted.html" class="prev">
+          Getting Started
+        </a></span> <span class="next"><a href="/docs/Components.html">
+          Locating Components
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8f59db69.js" defer></script><script src="/assets/js/3.49128bbd.js" defer></script><script src="/assets/js/18.0972fe05.js" defer></script>
+  </body>
+</html>
