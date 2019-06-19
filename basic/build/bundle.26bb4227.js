@@ -71691,7 +71691,7 @@ module.exports = [
         {
             'description': 'Using for: String.prototype.replace(regexp, replacement)',
             'tags': {},
-            'type': { 'name': 'undefined' },
+            'type': { 'name': 'RegExp' },
             'required': '',
             'defaultValue': {
                 'func': false,
