@@ -71299,7 +71299,6 @@ exports.push([module.i, "\n.button {\n\tpadding: 0.5em 1.5em;\n\tbackground-colo
 		if (false) {}
 
 		module.exports = {
-    'displayName': 'Best Button',
     'description': 'The only true button.',
     'tags': {
         'examples': [{
@@ -71307,6 +71306,7 @@ exports.push([module.i, "\n.button {\n\tpadding: 0.5em 1.5em;\n\tbackground-colo
                 'content': '../../../docs/Button.md'
             }]
     },
+    'displayName': 'Best Button',
     'props': [
         {
             'description': 'The color for the button.',
