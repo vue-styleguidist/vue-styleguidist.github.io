@@ -755,7 +755,7 @@ eval("\n\t\tif (false) {}\n\n\t\tmodule.exports = {\n    'displayName': 'Button'
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports[\"default\"] = void 0;\nvar GITHUB_HOMEPAGE = 'https://github.com/vue-styleguidist/vue-styleguidist/';\nvar DOCS_HOMEPAGE = 'https://vue-styleguidist.github.com/';\nvar _default = {\n  HOMEPAGE: DOCS_HOMEPAGE,\n  BUGS: GITHUB_HOMEPAGE + '/issues',\n  DOCS_CONFIG: DOCS_HOMEPAGE + 'docs/Configuration',\n  DOCS_COMPONENTS: DOCS_HOMEPAGE + 'docs/Components',\n  DOCS_WEBPACK: DOCS_HOMEPAGE + 'docs/Webpack',\n  DOCS_DOCUMENTING: DOCS_HOMEPAGE + 'docs/Documenting'\n};\nexports[\"default\"] = _default;\n\n//# sourceURL=webpack:////home/travis/build/vue-styleguidist/vue-styleguidist/packages/vue-styleguidist/lib/scripts/consts.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports[\"default\"] = void 0;\nvar GITHUB_HOMEPAGE = 'https://github.com/vue-styleguidist/vue-styleguidist/';\nvar DOCS_HOMEPAGE = 'https://vue-styleguidist.github.io/';\nvar _default = {\n  HOMEPAGE: DOCS_HOMEPAGE,\n  BUGS: GITHUB_HOMEPAGE + '/issues',\n  DOCS_CONFIG: DOCS_HOMEPAGE + 'docs/Configuration',\n  DOCS_COMPONENTS: DOCS_HOMEPAGE + 'docs/Components',\n  DOCS_WEBPACK: DOCS_HOMEPAGE + 'docs/Webpack',\n  DOCS_DOCUMENTING: DOCS_HOMEPAGE + 'docs/Documenting'\n};\nexports[\"default\"] = _default;\n\n//# sourceURL=webpack:////home/travis/build/vue-styleguidist/vue-styleguidist/packages/vue-styleguidist/lib/scripts/consts.js?");
 
 /***/ }),
 
