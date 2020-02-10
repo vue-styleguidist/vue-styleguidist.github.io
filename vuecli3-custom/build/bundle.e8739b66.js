@@ -942,7 +942,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("/**\n * @mixin\n */\nmodule.exports = {\n  props: {\n    /**\n     * Set size of the element\n     */\n    size: {\n      type: String,\n      default: '14px'\n    }\n  }\n};\n\n//# sourceURL=webpack:///./src/components/sizeMixin.js?");
+eval("module.exports = {\n  props: {\n    /**\n     * Set size of the element\n     */\n    size: {\n      type: String,\n      default: '14px'\n    }\n  }\n};\n\n//# sourceURL=webpack:///./src/components/sizeMixin.js?");
 
 /***/ }),
 
