@@ -522,6 +522,18 @@ eval("\n// TODO: Remove from `core-js@4` since it's moved to entry points\n__web
 
 /***/ }),
 
+/***/ "../../node_modules/core-js/internals/flatten-into-array.js":
+/*!*****************************************************************************************************************!*\
+  !*** /home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/internals/flatten-into-array.js ***!
+  \*****************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar isArray = __webpack_require__(/*! ../internals/is-array */ \"../../node_modules/core-js/internals/is-array.js\");\nvar toLength = __webpack_require__(/*! ../internals/to-length */ \"../../node_modules/core-js/internals/to-length.js\");\nvar bind = __webpack_require__(/*! ../internals/function-bind-context */ \"../../node_modules/core-js/internals/function-bind-context.js\");\n\n// `FlattenIntoArray` abstract operation\n// https://tc39.github.io/proposal-flatMap/#sec-FlattenIntoArray\nvar flattenIntoArray = function (target, original, source, sourceLen, start, depth, mapper, thisArg) {\n  var targetIndex = start;\n  var sourceIndex = 0;\n  var mapFn = mapper ? bind(mapper, thisArg, 3) : false;\n  var element;\n\n  while (sourceIndex < sourceLen) {\n    if (sourceIndex in source) {\n      element = mapFn ? mapFn(source[sourceIndex], sourceIndex, original) : source[sourceIndex];\n\n      if (depth > 0 && isArray(element)) {\n        targetIndex = flattenIntoArray(target, original, element, toLength(element.length), targetIndex, depth - 1) - 1;\n      } else {\n        if (targetIndex >= 0x1FFFFFFFFFFFFF) throw TypeError('Exceed the acceptable array length');\n        target[targetIndex] = element;\n      }\n\n      targetIndex++;\n    }\n    sourceIndex++;\n  }\n  return targetIndex;\n};\n\nmodule.exports = flattenIntoArray;\n\n\n//# sourceURL=webpack:////home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/internals/flatten-into-array.js?");
+
+/***/ }),
+
 /***/ "../../node_modules/core-js/internals/freezing.js":
 /*!*******************************************************************************************************!*\
   !*** /home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/internals/freezing.js ***!
@@ -1303,6 +1315,18 @@ eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"../../node_modu
 
 /***/ }),
 
+/***/ "../../node_modules/core-js/modules/es.array.flat.js":
+/*!**********************************************************************************************************!*\
+  !*** /home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/modules/es.array.flat.js ***!
+  \**********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"../../node_modules/core-js/internals/export.js\");\nvar flattenIntoArray = __webpack_require__(/*! ../internals/flatten-into-array */ \"../../node_modules/core-js/internals/flatten-into-array.js\");\nvar toObject = __webpack_require__(/*! ../internals/to-object */ \"../../node_modules/core-js/internals/to-object.js\");\nvar toLength = __webpack_require__(/*! ../internals/to-length */ \"../../node_modules/core-js/internals/to-length.js\");\nvar toInteger = __webpack_require__(/*! ../internals/to-integer */ \"../../node_modules/core-js/internals/to-integer.js\");\nvar arraySpeciesCreate = __webpack_require__(/*! ../internals/array-species-create */ \"../../node_modules/core-js/internals/array-species-create.js\");\n\n// `Array.prototype.flat` method\n// https://github.com/tc39/proposal-flatMap\n$({ target: 'Array', proto: true }, {\n  flat: function flat(/* depthArg = 1 */) {\n    var depthArg = arguments.length ? arguments[0] : undefined;\n    var O = toObject(this);\n    var sourceLen = toLength(O.length);\n    var A = arraySpeciesCreate(O, 0);\n    A.length = flattenIntoArray(A, O, O, sourceLen, 0, depthArg === undefined ? 1 : toInteger(depthArg));\n    return A;\n  }\n});\n\n\n//# sourceURL=webpack:////home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/modules/es.array.flat.js?");
+
+/***/ }),
+
 /***/ "../../node_modules/core-js/modules/es.array.for-each.js":
 /*!**************************************************************************************************************!*\
   !*** /home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/modules/es.array.for-each.js ***!
@@ -1395,6 +1419,17 @@ eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"../../node_modu
 
 "use strict";
 eval("\nvar $ = __webpack_require__(/*! ../internals/export */ \"../../node_modules/core-js/internals/export.js\");\nvar $some = __webpack_require__(/*! ../internals/array-iteration */ \"../../node_modules/core-js/internals/array-iteration.js\").some;\nvar arrayMethodIsStrict = __webpack_require__(/*! ../internals/array-method-is-strict */ \"../../node_modules/core-js/internals/array-method-is-strict.js\");\nvar arrayMethodUsesToLength = __webpack_require__(/*! ../internals/array-method-uses-to-length */ \"../../node_modules/core-js/internals/array-method-uses-to-length.js\");\n\nvar STRICT_METHOD = arrayMethodIsStrict('some');\nvar USES_TO_LENGTH = arrayMethodUsesToLength('some');\n\n// `Array.prototype.some` method\n// https://tc39.github.io/ecma262/#sec-array.prototype.some\n$({ target: 'Array', proto: true, forced: !STRICT_METHOD || !USES_TO_LENGTH }, {\n  some: function some(callbackfn /* , thisArg */) {\n    return $some(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);\n  }\n});\n\n\n//# sourceURL=webpack:////home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/modules/es.array.some.js?");
+
+/***/ }),
+
+/***/ "../../node_modules/core-js/modules/es.array.unscopables.flat.js":
+/*!**********************************************************************************************************************!*\
+  !*** /home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/modules/es.array.unscopables.flat.js ***!
+  \**********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// this method was added to unscopables after implementation\n// in popular engines, so it's moved to a separate module\nvar addToUnscopables = __webpack_require__(/*! ../internals/add-to-unscopables */ \"../../node_modules/core-js/internals/add-to-unscopables.js\");\n\naddToUnscopables('flat');\n\n\n//# sourceURL=webpack:////home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/core-js/modules/es.array.unscopables.flat.js?");
 
 /***/ }),
 
