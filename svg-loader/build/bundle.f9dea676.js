@@ -858,6 +858,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "../../packages/vue-styleguidist/lib/loaders/docs-loader.js!../../node_modules/cache-loader/dist/cjs.js?!../../node_modules/vue-loader/lib/index.js?!./src/components/Button/Button.vue?vue&type=custom&index=0&blockType=docs":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** /home/travis/build/vue-styleguidist/vue-styleguidist/packages/vue-styleguidist/lib/loaders/docs-loader.js!/home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/cache-loader/dist/cjs.js??ref--1-0!/home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/vue-loader/lib??vue-loader-options!./src/components/Button/Button.vue?vue&type=custom&index=0&blockType=docs ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) {\n\t\tComponent.options.__docs = \"\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\nIcon on the right Side\\n\\n```vue\\n<template>\\n  <Button>\\n    <template v-slot:leftIcon>\\n      <test-icon></test-icon>\\n    </template>\\n    Push Me\\n  </Button>\\n</template>\\n\\n<script>\\nimport TestIcon from '../../assets/logo.svg'\\n// You can also use 'exports.default = {}' style module exports.\\n\\nexport default {\\n\\tcomponents: {\\n\\t\\tTestIcon\\n\\t}\\n}\\n</script>\\n```\\n\"\n\t  });\n\n//# sourceURL=webpack:///./src/components/Button/Button.vue?/home/travis/build/vue-styleguidist/vue-styleguidist/packages/vue-styleguidist/lib/loaders/docs-loader.js!/home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/cache-loader/dist/cjs.js??ref--1-0!/home/travis/build/vue-styleguidist/vue-styleguidist/node_modules/vue-loader/lib??vue-loader-options");
+
+/***/ }),
+
 /***/ "../../packages/vue-styleguidist/lib/loaders/examples-loader.js?customLangs=vue|js|jsx!./src/components/Button/Button.vue":
 /*!*******************************************************************************************************************************************************************************!*\
   !*** /home/travis/build/vue-styleguidist/vue-styleguidist/packages/vue-styleguidist/lib/loaders/examples-loader.js?customLangs=vue|js|jsx!./src/components/Button/Button.vue ***!
@@ -971,7 +983,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _But
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (Component) {\n\t\tComponent.options.__docs = \"// empty (null-loader)\"\n\t  });\n\n//# sourceURL=webpack:///./src/components/Button/Button.vue?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _packages_vue_styleguidist_lib_loaders_docs_loader_js_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Button_vue_vue_type_custom_index_0_blockType_docs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../packages/vue-styleguidist/lib/loaders/docs-loader.js!../../../../../node_modules/cache-loader/dist/cjs.js??ref--1-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Button.vue?vue&type=custom&index=0&blockType=docs */ \"../../packages/vue-styleguidist/lib/loaders/docs-loader.js!../../node_modules/cache-loader/dist/cjs.js?!../../node_modules/vue-loader/lib/index.js?!./src/components/Button/Button.vue?vue&type=custom&index=0&blockType=docs\");\n/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__[\"default\"] = (_packages_vue_styleguidist_lib_loaders_docs_loader_js_node_modules_cache_loader_dist_cjs_js_ref_1_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Button_vue_vue_type_custom_index_0_blockType_docs__WEBPACK_IMPORTED_MODULE_0__[\"default\"]); \n\n//# sourceURL=webpack:///./src/components/Button/Button.vue?");
 
 /***/ }),
 
