@@ -16,7 +16,7 @@
   <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Isolated Vue component development environment with a living style guide">
   <meta prefix="og: http://ogp.me/ns#" property="og:image" content="/assets/logo.png">
     
-    <link rel="preload" href="/assets/css/0.styles.b6b2bf75.css" as="style"><link rel="preload" href="/assets/js/app.42123075.js" as="script"><link rel="preload" href="/assets/js/3.042ae361.js" as="script"><link rel="preload" href="/assets/js/16.86b21a2c.js" as="script"><link rel="prefetch" href="/assets/js/10.94195e43.js"><link rel="prefetch" href="/assets/js/11.ba574848.js"><link rel="prefetch" href="/assets/js/12.c456ef5b.js"><link rel="prefetch" href="/assets/js/13.bd35eda8.js"><link rel="prefetch" href="/assets/js/14.3d893ea0.js"><link rel="prefetch" href="/assets/js/15.7273907d.js"><link rel="prefetch" href="/assets/js/17.67d400f3.js"><link rel="prefetch" href="/assets/js/18.0406614d.js"><link rel="prefetch" href="/assets/js/19.75f11e5f.js"><link rel="prefetch" href="/assets/js/20.10668fc2.js"><link rel="prefetch" href="/assets/js/21.9039484b.js"><link rel="prefetch" href="/assets/js/22.cf7dfbae.js"><link rel="prefetch" href="/assets/js/4.4af8cdae.js"><link rel="prefetch" href="/assets/js/5.548b56e5.js"><link rel="prefetch" href="/assets/js/6.6577a483.js"><link rel="prefetch" href="/assets/js/7.7624fbf2.js"><link rel="prefetch" href="/assets/js/8.eea8a885.js"><link rel="prefetch" href="/assets/js/9.97cae1cb.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.8e2cf201.js">
+    <link rel="preload" href="/assets/css/0.styles.b6b2bf75.css" as="style"><link rel="preload" href="/assets/js/app.2c015bdb.js" as="script"><link rel="preload" href="/assets/js/3.d616312c.js" as="script"><link rel="preload" href="/assets/js/16.0fe79a5a.js" as="script"><link rel="prefetch" href="/assets/js/10.b9060888.js"><link rel="prefetch" href="/assets/js/11.0958e58c.js"><link rel="prefetch" href="/assets/js/12.d294b8a9.js"><link rel="prefetch" href="/assets/js/13.2f1c463d.js"><link rel="prefetch" href="/assets/js/14.f51eb423.js"><link rel="prefetch" href="/assets/js/15.e0576ef4.js"><link rel="prefetch" href="/assets/js/17.d1a2d514.js"><link rel="prefetch" href="/assets/js/18.7cd048d3.js"><link rel="prefetch" href="/assets/js/19.cd4daac6.js"><link rel="prefetch" href="/assets/js/20.e2e08c40.js"><link rel="prefetch" href="/assets/js/21.ad73fa5a.js"><link rel="prefetch" href="/assets/js/22.cf7dfbae.js"><link rel="prefetch" href="/assets/js/4.a633331f.js"><link rel="prefetch" href="/assets/js/5.f67e02b7.js"><link rel="prefetch" href="/assets/js/6.897438e2.js"><link rel="prefetch" href="/assets/js/7.52ecdacc.js"><link rel="prefetch" href="/assets/js/8.7a626055.js"><link rel="prefetch" href="/assets/js/9.2d3e22d5.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.4a1fb7f1.js">
     <link rel="stylesheet" href="/assets/css/0.styles.b6b2bf75.css">
   </head>
   <body>
@@ -92,48 +92,48 @@
   resolve<span class="token operator">:</span> <span class="token punctuation">[</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'src'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
   addScriptHandlers<span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token keyword">function</span> <span class="token punctuation">(</span>
-      <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+      documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
       componentDefinition<span class="token operator">:</span> NodePath<span class="token punctuation">,</span>
       astPath<span class="token operator">:</span> bt<span class="token punctuation">.</span>File<span class="token punctuation">,</span>
-      opt<span class="token operator">:</span> ParseOptions</span>
+      opt<span class="token operator">:</span> ParseOptions
     <span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token comment">// handle custom code in script</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">]</span><span class="token punctuation">,</span>
   addTemplateHandlers<span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token keyword">function</span> <span class="token punctuation">(</span>
-      <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+      documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
       templateAst<span class="token operator">:</span> ASTElement<span class="token punctuation">,</span>
-      options<span class="token operator">:</span> TemplateParserOptions</span>
+      options<span class="token operator">:</span> TemplateParserOptions
     <span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token comment">// handle custom directives here</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">]</span><span class="token punctuation">,</span>
   preScriptHandlers<span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token keyword">function</span> <span class="token punctuation">(</span>
-      <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+      documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
       componentDefinition<span class="token operator">:</span> NodePath<span class="token punctuation">,</span>
       astPath<span class="token operator">:</span> bt<span class="token punctuation">.</span>File<span class="token punctuation">,</span>
-      opt<span class="token operator">:</span> ParseOptions</span>
+      opt<span class="token operator">:</span> ParseOptions
     <span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token comment">// replaces handlers run before the scriptHandlers</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">]</span><span class="token punctuation">,</span>
   scriptHandlers<span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token keyword">function</span> <span class="token punctuation">(</span>
-      <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+      documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
       componentDefinition<span class="token operator">:</span> NodePath<span class="token punctuation">,</span>
       astPath<span class="token operator">:</span> bt<span class="token punctuation">.</span>File<span class="token punctuation">,</span>
-      opt<span class="token operator">:</span> ParseOptions</span>
+      opt<span class="token operator">:</span> ParseOptions
     <span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token comment">// replaces all the scriptHandlers</span>
     <span class="token punctuation">}</span>
   <span class="token punctuation">]</span><span class="token punctuation">,</span>
   templateHandlers<span class="token operator">:</span> <span class="token punctuation">[</span>
     <span class="token keyword">function</span> <span class="token punctuation">(</span>
-      <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+      documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
       templateAst<span class="token operator">:</span> ASTElement<span class="token punctuation">,</span>
-      options<span class="token operator">:</span> TemplateParserOptions</span>
+      options<span class="token operator">:</span> TemplateParserOptions
     <span class="token punctuation">)</span> <span class="token punctuation">{</span>
       <span class="token comment">// replaces all the templateHandlers</span>
     <span class="token punctuation">}</span>
@@ -149,12 +149,12 @@
   scriptHandlers<span class="token operator">:</span> <span class="token punctuation">[</span>ScriptHandlers<span class="token punctuation">.</span>componentHandler<span class="token punctuation">]</span><span class="token punctuation">,</span>
   templateHandlers<span class="token operator">:</span> <span class="token punctuation">[</span>TemplateHandlers<span class="token punctuation">.</span>slotHandler<span class="token punctuation">]</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
-</code></pre></div></blockquote> <h4 id="validextends"><a href="#validextends" class="header-anchor">#</a> <code>validExtends</code></h4> <p>Function - Returns if an extended component should be parsed by docgen.</p> <blockquote><p><strong>NOTE</strong> If docgen fails to parse the targeted component, it will log a warning. It is non-blocking but annoying.</p></blockquote> <blockquote><p><strong>NOTE</strong> If you allow all of <code>node_modules</code> to try to be parsed, you might degrade performance. Use it responsibly.</p></blockquote> <h2 id="architecture"><a href="#architecture" class="header-anchor">#</a> Architecture</h2> <h3 id="documentation-object"><a href="#documentation-object" class="header-anchor">#</a> Documentation Object</h3> <p>The <code>Documentation</code> class is the container of information before getting compiled. To be used and exported, use the <code>toObject()</code> function to make a neutral serializable object.</p> <p>The object has functions to get descriptors for props, events, methods, and slots. All those functions follow the same principle. If you call it twice with the same argument, it will return twice the same reference to the prop. This way if your prop is decorated in multiple places, it simplifies its documentation.</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">function</span> <span class="token function">getPropDescriptor</span><span class="token punctuation">(</span><span class="token parameter">propName<span class="token operator">:</span> <span class="token builtin">string</span></span><span class="token punctuation">)</span><span class="token operator">:</span> PropDescriptor
+</code></pre></div></blockquote> <h4 id="validextends"><a href="#validextends" class="header-anchor">#</a> <code>validExtends</code></h4> <p>Function - Returns if an extended component should be parsed by docgen.</p> <blockquote><p><strong>NOTE</strong> If docgen fails to parse the targeted component, it will log a warning. It is non-blocking but annoying.</p></blockquote> <blockquote><p><strong>NOTE</strong> If you allow all of <code>node_modules</code> to try to be parsed, you might degrade performance. Use it responsibly.</p></blockquote> <h2 id="architecture"><a href="#architecture" class="header-anchor">#</a> Architecture</h2> <h3 id="documentation-object"><a href="#documentation-object" class="header-anchor">#</a> Documentation Object</h3> <p>The <code>Documentation</code> class is the container of information before getting compiled. To be used and exported, use the <code>toObject()</code> function to make a neutral serializable object.</p> <p>The object has functions to get descriptors for props, events, methods, and slots. All those functions follow the same principle. If you call it twice with the same argument, it will return twice the same reference to the prop. This way if your prop is decorated in multiple places, it simplifies its documentation.</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">function</span> <span class="token function">getPropDescriptor</span><span class="token punctuation">(</span>propName<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> PropDescriptor
 </code></pre></div><h3 id="parsers"><a href="#parsers" class="header-anchor">#</a> Parsers</h3> <p>First, we use babel to parse the comments in the code.</p> <p>Then we use <code>vue-template-compiler</code> to parse the HTML template.</p> <p>These parsers give us Abstract Syntax Trees (AST). We then traverse them with handlers to extract the info we need from components and their JSdoc.</p> <h3 id="handlers"><a href="#handlers" class="header-anchor">#</a> Handlers</h3> <p>Script and template have 2 different AST structure. It makes sense that they have different handlers. There are a few standard handlers in docgen. You can add your own using the <code>addScriptHandler</code> or <code>addTemplateHandler</code> options.</p> <h3 id="script-handlers"><a href="#script-handlers" class="header-anchor">#</a> Script Handlers</h3> <p>To handle scripts, we can register them this way. Each handler is a JavaScript function following this prototype.</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">handler</span><span class="token punctuation">(</span>
-  <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+  documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
   componentDefinition<span class="token operator">:</span> NodePath<span class="token punctuation">,</span>
   astPath<span class="token operator">:</span> bt<span class="token punctuation">.</span>File<span class="token punctuation">,</span>
-  opt<span class="token operator">:</span> ParseOptions</span>
+  opt<span class="token operator">:</span> ParseOptions
 <span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// Handling of the documentation on the script</span>
 <span class="token punctuation">}</span>
@@ -163,17 +163,17 @@
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Documentation<span class="token punctuation">,</span> ParseOptions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-docgen-api'</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">handler</span><span class="token punctuation">(</span>
-  <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+  documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
   componentDefinition<span class="token operator">:</span> NodePath<span class="token punctuation">,</span>
   astPath<span class="token operator">:</span> bt<span class="token punctuation">.</span>File<span class="token punctuation">,</span>
-  opt<span class="token operator">:</span> ParseOptions</span>
+  opt<span class="token operator">:</span> ParseOptions
 <span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// deal with functional flag</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>bt<span class="token punctuation">.</span><span class="token function">isObjectExpression</span><span class="token punctuation">(</span>componentDefinition<span class="token punctuation">.</span>node<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> functionalPath <span class="token operator">=</span> componentDefinition
       <span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'properties'</span><span class="token punctuation">)</span>
       <span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span>
-        <span class="token punctuation">(</span><span class="token parameter">p<span class="token operator">:</span> NodePath</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
+        <span class="token punctuation">(</span>p<span class="token operator">:</span> NodePath<span class="token punctuation">)</span> <span class="token operator">=&gt;</span>
           bt<span class="token punctuation">.</span><span class="token function">isObjectProperty</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>node<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
           p<span class="token punctuation">.</span>node<span class="token punctuation">.</span>key<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">'functional'</span>
       <span class="token punctuation">)</span>
@@ -188,9 +188,9 @@
   <span class="token comment">// ...</span>
 <span class="token punctuation">}</span>
 </code></pre></div><h3 id="template-handlers"><a href="#template-handlers" class="header-anchor">#</a> Template Handlers</h3> <p>Template handlers have the following prototype.</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">handler</span><span class="token punctuation">(</span>
-  <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+  documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
   templateAst<span class="token operator">:</span> ASTElement<span class="token punctuation">,</span>
-  options<span class="token operator">:</span> TemplateParserOptions</span>
+  options<span class="token operator">:</span> TemplateParserOptions
 <span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token comment">// template handler code</span>
 <span class="token punctuation">}</span>
@@ -198,9 +198,9 @@
 <span class="token keyword">import</span> <span class="token punctuation">{</span> Documentation<span class="token punctuation">,</span> TemplateParserOptions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-docgen-api'</span>
 
 <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token function">slotHandler</span><span class="token punctuation">(</span>
-  <span class="token parameter">documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
+  documentation<span class="token operator">:</span> Documentation<span class="token punctuation">,</span>
   templateAst<span class="token operator">:</span> ASTElement<span class="token punctuation">,</span>
-  options<span class="token operator">:</span> TemplateParserOptions</span>
+  options<span class="token operator">:</span> TemplateParserOptions
 <span class="token punctuation">)</span> <span class="token punctuation">{</span>
   <span class="token keyword">if</span> <span class="token punctuation">(</span>templateAst<span class="token punctuation">.</span>tag <span class="token operator">===</span> <span class="token string">'button'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">let</span> buttons <span class="token operator">=</span> documentation<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'buttons'</span><span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
@@ -245,6 +245,6 @@
       <a href="/docs/Deployment.html" class="prev">Deployment</a></span> <span class="next"><a href="/docs/docgen-cli.html">vue-docgen-cli</a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.42123075.js" defer></script><script src="/assets/js/3.042ae361.js" defer></script><script src="/assets/js/16.86b21a2c.js" defer></script>
+    <script src="/assets/js/app.2c015bdb.js" defer></script><script src="/assets/js/3.d616312c.js" defer></script><script src="/assets/js/16.0fe79a5a.js" defer></script>
   </body>
 </html>

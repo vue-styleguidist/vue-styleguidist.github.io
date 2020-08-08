@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{643:function(t,e,n){"use strict";n.r(e);var i={name:"MyOption",props:{val:{type:String,required:!0}}},l=n(0),o=Object(l.a)(i,(function(){var t=this.$createElement;return(this._self._c||t)("option",{domProps:{value:this.val}},[this._t("default")],2)}),[],!1,null,null,null);e.default=o.exports}}]);
