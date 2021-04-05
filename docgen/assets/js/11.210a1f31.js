@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{874:function(e,t,n){"use strict";n.r(t);var l={name:"DropDown"},s=n(41),a=Object(s.a)(l,(function(){var e=this.$createElement;return(this._self._c||e)("select",{attrs:{name:"mySelect"}},[this._t("default")],2)}),[],!1,null,null,null);t.default=a.exports}}]);
