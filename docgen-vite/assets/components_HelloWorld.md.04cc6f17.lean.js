@@ -1,0 +1,2 @@
+import{_ as d,c as e,a as r,b as o,o as a,r as l}from"./app.fe310811.js";const b=JSON.parse('{"title":"HelloWorld","description":"","frontmatter":{},"headers":[{"level":2,"title":"Props","slug":"props"}],"relativePath":"components/HelloWorld.md"}'),n={name:"components/HelloWorld.md"},s=o("",4);function i(h,_,c,p,u,f){const t=l("vue-live");return a(),e("div",null,[s,r(t,{layoutProps:{lang:"vue"},code:`<HelloWorld msg="Default Example Usage" />
+`,requires:{}})])}var v=d(n,[["render",i]]);export{b as __pageData,v as default};

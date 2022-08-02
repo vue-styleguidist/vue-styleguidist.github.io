@@ -1,0 +1,28 @@
+
+      module.exports = {
+        functional: true,
+        render(_h, _vm) {
+          const { _c, _v, data, children = [] } = _vm;
+
+          const {
+            class: classNames,
+            staticClass,
+            style,
+            staticStyle,
+            attrs = {},
+            ...rest
+          } = data;
+
+          return _c(
+            'svg',
+            {
+              class: [classNames,staticClass],
+              style: [style,staticStyle],
+              attrs: Object.assign({"viewBox":"0 0 215.164 176.504","xmlns":"http://www.w3.org/2000/svg"}, attrs),
+              ...rest,
+            },
+            children.concat([_c('path',{attrs:{"fill":"#a8db88","d":"M107.182 3.502l-25.5 44.1 25.5 44.1 25.7-44.1-25.7-44.1z"}}),_c('circle',{attrs:{"fill":"#41b883","cx":"174.282","cy":"91.702","r":"36.5"}}),_c('circle',{attrs:{"fill":"#41b883","cx":"40.882","cy":"91.702","r":"36.5"}}),_c('path',{attrs:{"fill":"#a8db88","d":"M118.982 168.902h-22.8c-11.2 0-60-22-60-22l1.6-18.7s9.3-4.6 11.1-36.5c1.7-31.9-4.9-36.3-4.9-36.3l2.3-27.5h46.9l14-24.4 14.5 24.4h47.3l2.3 27.5s-7.6 4.3-4.9 36.3c2.7 32 11.1 36.5 11.1 36.5l1.6 18.7c-.1 0-48.5 22-60.1 22z"}}),_c('path',{attrs:{"fill":"#35495e","d":"M107.582 133.702l-11.3 19.7 11.3 19.6 11.4-19.6-11.4-19.7z"}}),_c('path',{attrs:{"fill":"#41b883","d":"M144.382 27.902h24.5l-61.3 105.8-61.4-105.8h46.9l14.5 24.5 14.1-24.5h22.7z"}}),_c('path',{attrs:{"fill":"#41b883","d":"M46.182 27.902l61.4 105.8 61.4-105.9h-24.5l-36.9 63.6-37.1-63.5h-24.3z"}}),_c('path',{attrs:{"fill":"#35495e","d":"M70.482 27.902l37.1 63.8 36.8-63.8h-22.7l-14.1 24.5-14.4-24.5h-22.7z"}}),_c('path',{attrs:{"d":"M178.982 146.902s-14.4-5.5-34.5-9.4c-11-2.1-23.7-3.8-36.8-3.8-13.2 0-26.1 1.7-37.1 3.8-20 3.9-34.2 9.4-34.2 9.4","fill":"none","stroke":"#35495e","stroke-width":"2","stroke-linecap":"round","stroke-linejoin":"round","stroke-miterlimit":"10"}}),_c('circle',{attrs:{"fill":"#35495e","cx":"25.182","cy":"110.502","r":"7"}}),_c('circle',{attrs:{"fill":"#35495e","cx":"189.982","cy":"72.202","r":"7"}})])
+          )
+        }
+      }
+    
