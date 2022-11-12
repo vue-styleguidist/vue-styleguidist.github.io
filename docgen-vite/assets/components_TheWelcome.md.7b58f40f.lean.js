@@ -1,2 +1,0 @@
-import{_ as e,c as d,a as r,b as o,o as a,r as n}from"./app.79d887f2.js";const T=JSON.parse('{"title":"TheWelcome","description":"","frontmatter":{},"headers":[{"level":2,"title":"Props","slug":"props"}],"relativePath":"components/TheWelcome.md"}'),s={name:"components/TheWelcome.md"},c=o("",4);function h(l,i,_,p,m,u){const t=n("vue-live");return a(),d("div",null,[c,r(t,{layoutProps:{lang:"vue"},code:`<TheWelcome />
-`,requires:{}})])}var b=e(s,[["render",h]]);export{T as __pageData,b as default};
