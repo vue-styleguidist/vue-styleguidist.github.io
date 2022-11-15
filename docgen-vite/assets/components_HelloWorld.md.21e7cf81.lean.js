@@ -1,2 +1,0 @@
-import{_ as t,c as o,a as r,b as a,o as l,r as d}from"./app.9b9b7733.js";const v=JSON.parse('{"title":"HelloWorld","description":"","frontmatter":{},"headers":[{"level":2,"title":"Props","slug":"props","link":"#props","children":[]}],"relativePath":"components/HelloWorld.md"}'),s={name:"components/HelloWorld.md"},n=a("",4);function h(c,p,i,_,m,u){const e=d("vue-live");return l(),o("div",null,[n,r(e,{layoutProps:{lang:"vue"},code:`<HelloWorld msg="Default Example Usage" />
-`,requires:{}})])}const b=t(s,[["render",h]]);export{v as __pageData,b as default};
